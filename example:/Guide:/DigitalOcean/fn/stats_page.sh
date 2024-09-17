@@ -5,3 +5,5 @@ sudo wget -O /var/www/html/rtmp/stat.xsl https://raw.githubusercontent.com/arut/
 sudo ufw allow from 127.0.0.1 to any port http-alt
 
 sudo ln -s /etc/nginx/sites-available/rtmp /etc/nginx/sites-enabled/rtmp
+
+sudo systemctl reload nginx.service
